@@ -8,35 +8,24 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+      {/*  */}
       <h1>Vite + React</h1>
-     <Person></Person>  
-     <Person></Person>  
-      <Sports></Sports>
-     <Person></Person>  
+      
+ <Player name="Tamim" runs="5000"></Player>
+
+
     </>
   )
 }
 
-function Person(){
-  const name="john";
-  const age=17;
+function Player(props){
   return(
-    <p>I am person: {name} {age}</p>
+    <div className='student'>
+      <h3>Name:{props.name}</h3>
+      <p>Runs:{props.runs}</p>
+    </div>
+  )
+}
 
-  )
-}
-function Sports(){
-  return(
-    <h1>sports</h1>
-  )
-}
 
 export default App
